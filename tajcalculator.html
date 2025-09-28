@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)file:///C:/Users/DELL/Desktop/CLAculator.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+		*{
+background-color: rgb(15, 54, 54);
+		}
+.main{
+
+
+width: 30%;
+ height: 430px;
+
+margin-top: 50px;
+border: 2px solid   rgb(231, 238, 238);
+border-radius: 5%;
+border-width: 10px;
+text-decoration: lategrey;
+font-family: rgb(231, 238, 238);
+background-color:  rgb(4, 70, 71);
+		}
+ 
+
+
+
+.cbton{ 
+			border-radius: 70px;
+			  text-decoration-color: rgb(241, 246, 246);
+			height: 40px;
+			width: 50px;
+            font-family:rgb(231, 238, 238);
+		    font-size: 15pt;
+		    margin-left: 3px;
+            font-weight:bold ;
+			 color: rgb(255, 249, 249);
+		}
+.bton{ 
+			border-radius: 70px;
+			color: rgb(255, 249, 249);
+    
+			height: 40px;
+			width: 100px;
+            font-family:rgb(231, 238, 238);
+		    font-size: 15pt;
+		    margin-left: 3px;
+            font-weight:bold ;
+		}
+
+
+
+
+
+
+
+
+
+
+.box{
+			   margin-top : 10px;
+			   margin-left: 6px;
+			   width: 200px;
+			   height: 40px;
+			   font-size: light;
+			   font-weight: 10px;
+			   text-align: right;
+			   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+			   border-radius:25px;
+background-color:rgb(242, 245, 248);
+}
+		
+.cbton:hover{
+	 text-shadow:rgb(163, 197, 235) ;
+}
+
+
+
+
+
+ * {
+  background-color: rgb(15, 54, 54);
+}
+
+.main {
+  width: 30%;
+  height: 100vh;       /* screen ki full height */
+  margin: auto;        /* center karne ke liye */
+  border: 10px solid rgb(231, 238, 238);
+  border-radius: 5%;
+  background-color: rgb(4, 70, 71);
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  .main {
+    width: 80%;
+    height: auto;   /* mobile pe content jitna ho utna hi */
+  }
+}
+
+
+
+ 
+
+
+
+    </style>
+<style type="text/css" id="operaUserStyle"></style></head>
+<body>
+    <center> 
+		 
+    <div class="main">
+        <br>
+	<input class="box" type="text" placeholder="0" id="textBox">
+	
+
+	<br><br><br>
+	<input class="cbton" type="button" value="Cl" onclick="textBox.value=&#39;&#39;">
+	<input class="cbton" type="button" value="Del" onclick="textBox.value=textBox.value.toString().slice(0,-1);">
+	<input class="cbton" type="button" value="%" onclick="textBox.value=&#39;&#39;">
+	<input class="cbton" type="button" value="/" onclick="textBox.value+=&#39;/&#39;">
+    <br><br>
+	<input class="cbton" type="button" value="7" onclick="textBox.value+=&#39;7&#39;">
+	<input class="cbton" type="button" value="8" onclick="textBox.value+=&#39;8&#39;">
+<input class="cbton" type="button" value="9" onclick="textBox.value+=&#39;9&#39;">
+<input class="cbton" type="button" value="*" onclick="textBox.value+=&#39;*&#39;">
+<br><br>
+<input class="cbton" type="button" value="4" onclick="textBox.value+=&#39;4&#39;">
+<input class="cbton" type="button" value="5" onclick="textBox.value+=&#39;5&#39;">
+<input class="cbton" type="button" value="6" onclick="textBox.value+=&#39;6&#39;">
+<input class="cbton" type="button" value="+" onclick="textBox.value+=&#39;+&#39;">
+<br><br>
+<input class="cbton" type="button" value="1" onclick="textBox.value+=&#39;1&#39;">
+<input class="cbton" type="button" value="2" onclick="textBox.value+=&#39;2&#39;">
+<input class="cbton" type="button" value="3" onclick="textBox.value+=&#39;3&#39;">
+<input class="cbton" type="button" value="-" onclick="textBox.value+=&#39;-&#39;">
+<br><br>
+<input class="cbton" type="button" value="." onclick="textBox.value+=&#39;.&#39;">
+<input class="cbton" type="button" value="0" onclick="textBox.value+=&#39;0&#39;">
+<input class="bton" type="button" value="=" onclick="textBox.value = eval(textBox.value);">
+ 
+</div>    
+</center>  
+
+</body></html>
