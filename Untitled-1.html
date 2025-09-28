@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<!-- saved from url=(0079)file:///C:/Users/DELL/Desktop/Nexvel%20internship%20programs/Hello%20world.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello world</title>
+
+<style>
+    body {
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: rgb(223, 207, 129);
+  scroll-behavior: smooth; /* smooth scrolling */
+}
+
+/* Main content */
+.main {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: left;
+  font-size: large;
+  margin: 10px 200px 50px 10px;
+  margin-top: 120px; /* navbar ke neeche jagah */
+  padding: 20px;
+}
+
+/* Header title */
+.hea {
+  text-align: left;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 0;
+  color: #0b0b0b;
+}
+
+/* Footer */
+.Fo {
+  text-align: center;
+  background-color:  #cb3608;
+  font-size: 18px;
+  padding: 10px;
+  margin-top: 40px;
+}
+
+/* Navbar */
+.Navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: #cb3608;
+  padding: 15px 40px;
+  box-shadow: 0 2px 4px rgba(146, 161, 176, 0.3);
+}
+
+.nav-link {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link li a {
+  text-decoration: none;
+  color: #050505;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-link li a:hover {
+  color: #222;
+}
+
+/* Image */
+ 
+  
+
+.pic img {
+  width: 20%;
+  height: auto;
+  border-radius: 10px;
+   margin-left: 20px;
+      margin-right: 30px;
+       float: right;
+}
+
+/* Section scroll fix */
+  #About, #cotact, #Skills {
+  scroll-margin-top: 120px; /* navbar height ke hisaab se adjust */
+}
+
+/* Responsive */
+@media only screen and (max-width: 800px) {
+  .Navbar {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .nav-link {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .pic {
+    float: right;
+   
+    margin: 50px;
+    border-image-width: 20px;
+    width: 300px;
+    border-radius: 20px;
+    height:  200px;
+    padding-right: 10px;
+    margin-right:50px;
+  }
+
+  .main {
+    margin: 20px;
+    margin-top: 150px;
+  }
+}
+
+/*  flexbox css*/
+.container{
+  width: 1170px;
+  margin:auto;
+  border: 3px red solid;
+  display: flex;
+  justify-content: center;
+flex-wrap: wrap;
+border-radius: 50px;
+display: grid; 
+grid-template-columns: 200px 200px 200px;
+row-gap: 50px;
+column-gap: 50px;
+  padding-left: 30px;
+  padding-right: 50px;
+    width: 700px;       /* example */
+  
+}
+
+
+.item1{
+padding: 10px;
+margin:7px;
+border : 1px solid red;
+width: 150px;
+background-color: #d0481fff;
+font-size: bold;
+ max-height: 200px;
+width :7px;
+margin-right: 100%;
+margin-left: 0%;
+border-radius: 500px;
+text-align: center;
+padding:10px;
+
+ 
+}
+.sk{
+ text-align: center;
+ font-size: medium;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 80px;
+ margin-bottom: auto;
+
+}
+/* contact section styling */
+.contact .title::after{
+    content: "get in touch";
+}
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left p{
+    text-align: justify;
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: crimson;
+}
+.contact .contact-content .info .head{
+    font-weight: 500;
+}
+.contact .contact-content .info .sub-title{
+    color: #333;
+}
+.contact .right form .fields{
+    display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+.contact .right form .name{
+    margin-right: 10px;
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+.contact .right form .field input:focus,
+.contact .right form .textarea textarea:focus{
+    border-color: #b3b3b3;
+}
+.contact .right form .textarea textarea{
+  padding-top: 10px;
+  resize: none;
+}
+.contact .right form .button-area{
+  display: flex;
+  align-items: center;
+}
+.right form .button-area button{
+  color: #fff;
+  display: block;
+  width: 160px!important;
+  height: 45px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  flex-wrap: nowrap;
+  background: crimson;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+.right form .button-area button:hover{
+  color: crimson;
+  background: none;
+}
+/* contact section styling */
+.contact .title::after{
+    content: "get in touch";
+}
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left p{
+    text-align: justify;
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: crimson;
+}
+.contact .contact-content .info .head{
+    font-weight: 500;
+}
+.contact .contact-content .info .sub-title{
+    color: #333;
+}
+.contact .right form .fields{
+    display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+.contact .right form .name{
+    margin-right: 10px;
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+.contact .right form .field input:focus,
+.contact .right form .textarea textarea:focus{
+    border-color: #b3b3b3;
+}
+.contact .right form .textarea textarea{
+  padding-top: 10px;
+  resize: none;
+}
+.contact .right form .button-area{
+  display: flex;
+  align-items: center;
+}
+.right form .button-area button{
+  color: #fff;
+  display: block;
+  width: 160px!important;
+  height: 45px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  flex-wrap: nowrap;
+  background: crimson;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+.right form .button-area button:hover{
+  color: crimson;
+  background: none;
+}
+ 
+ 
+/* Mobile devices (max 575px) */
+@media only screen and (max-width: 575px) {
+  .Navbar {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .nav-link {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .main {
+    margin: 20px;
+    margin-top: 150px;
+    font-size: medium;
+  }
+
+  .pic img {
+    width: 80%;
+    margin: 20px auto;
+    float: none;
+    display: block;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+}
+  .item1 {
+    width: 100%;
+  
+}
+
+/* Small devices (tablets: 576px to 767px) */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+
+  .pic img {
+    width: 60%;
+    margin: 20px auto;
+    float: none;
+    display: block;
+  }
+
+  .main {
+    margin: 20px;
+    margin-top: 150px;
+  }
+}
+
+/* Medium devices (768px to 991px) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+  }
+
+  .pic img {
+    width: 40%;
+    float: right;
+  }
+
+  .main {
+    margin: 40px;
+    margin-top: 150px;
+  }
+}
+
+/* Large devices (992px and up) */
+@media only screen and (min-width: 992px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    width: 900px;
+  }
+
+  .pic img {
+    width: 25%;
+  }
+}
+
+</style>
+ 
+</head>
+<body>
+  <div class="pic">
+    <img src="C:\Users\DELL\Desktop\Hello world_files\Screenshot 2025-09-21 115704.jpg" alt="My Picture"/>
+</div>
+<header>
+ <!--NavBar-->
+ <nav class="Navbar">
+<h1 class="hea">My Portfolio</h1>
+<ul class="nav-link">
+ 
+<li><a href="#about">About</a></li>
+<li><a href="#contact">contact</a></li>
+<li><a href="#skills">Skills</a></li>
+</ul>
+</nav>
+ <section class="about" id="about"> 
+<div class="main">
+
+
+   
+       <h2> I am Tabasum Laghari</h2>
+     
+       <p>I am a student of IT in QUEST Nawabshah.<br>
+         I am intreseted in webdevlopment 
+      </br> now i am selected in Nexvel company and CodeAlpha  company as Intern </p>
+      
+       
+<h3>My Hobbies</h3>
+  <ol type="1">
+    <li>Reading</li>
+    <li>Teachig</li>
+    <li>Studing</li>
+</ol>
+<ul>
+<li>Soving problem</li>
+<li>Coding</li>
+<li>Mathmaticss</li>
+</ul>
+
+
+</div>
+     <!--  flexbox -->
+      <span class="sk"><p>Skills</p></span>
+<section class="container" id="skills">
+<div class="item1"> webdevlopment</div>
+<div class="item1">UI/UX Design</div>
+<div class="item1">Automaiaton</div>
+<div class="item1"> Video Editing</div>
+<div class="item1">Cybersecurity</div>
+<div class="item1">Prompt Writing</div>
+ <div class="item1">UI/UX Design</div>
+<div class="item1" >IT Support</div>
+ <div class="item1">AI Essential</div>
+ 
+ </div>
+ </section> 
+ <br/>
+  <br/><br/><br/><br/>
+    <!-- contact section start -->
+     
+    <section class="contact" id="contact">
+      <span class="sk">Contact</span>
+        <div class="max-width">
+            <h2 class="title">Contact me </h2>
+            
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">  Get in Touch</div>
+                    <p>Get in touch to discuss your web development needs!.
+                       Ready to start your next project? Say hello!
+                        </p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title"> Tabasum Laghari</div>
+                            </div>
+                        </div>
+                        </div></br>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Nawabshah Sindh Pakistan</div>
+                                <br/>
+                                <h3>follow my page</h3>
+                                 <a href="https://www.linkedin.com/in/tabasum-laghari-web-developer-79375b366/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BG2mSMEk4SAa%2FK2xYxOpvPw%3D%3D">Linkedin</a>
+                            </div>
+                        </div>
+                       
+                            </div>
+                        </div>
+                                
+                            </div>
+                        </div>
+                      </section>
+       <br>
+       <footer class="Fo">
+        Gmail: lagharitaj00@gmail.com  | Linkedin:Tabasum Laghari
+    </footer>
+</div>
+</section>
+</body></html>  
